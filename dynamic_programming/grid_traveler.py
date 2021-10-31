@@ -17,4 +17,5 @@ def grid_traveler(n: int, m: int, memo=None) -> int:
     memo[key] = grid_traveler(n-1, m, memo) + grid_traveler(n, m-1, memo)
     return memo[key]
 
-print(grid_traveler(100, 100))
+if __name__ == "__main__":
+    print(grid_traveler(100, 100))
