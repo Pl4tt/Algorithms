@@ -23,10 +23,10 @@ def count_construct(target: str, words: list, memo: dict=None) -> int:
 
 
 if __name__ == "__main__":
-    print(count_construct("abcdef", ["ab", "abc", "cd", "def", "abcde"])) # True
-    print(count_construct("xyz", ["ab", "cd", "ef", "x", "z", "y"])) # True
-    print(count_construct("skateboard", ["sk", "bo", "rd", "skat", "skateboar", "sk", "boar", "bska", "ska"])) # False
-    print(count_construct("printableprintoble", ["able", "ab", "le", "pr", "print", "rint", "ab", "printo", "printable", "print"])) # False
-    print(count_construct("printableprintoble", ["able", "ab", "le", "pr", "print", "rint", "ab", "printo", "printble", "print", "b"])) # True
-    print(count_construct("eeeeeeeeeeeeeeeeeeeeeeee", ["eeeeeeeeeeeeeeeeee", "eee", "e", "eeeeeeeeeeeeeeeeeeeee", "eeeeee", "e"])) # True
-    print(count_construct("eeeeeeeeeeeeeee", ["EE", "E", "E", "EE", "E", "E", "EE", "E", "E", "EE", "E", "E"])) # False
+    print(count_construct("abcdef", ["ab", "abc", "cd", "def", "abcde"]))
+    print(count_construct("xyz", ["ab", "cd", "ef", "x", "z", "y"]))
+    print(count_construct("skateboard", ["sk", "bo", "rd", "skat", "skateboar", "sk", "boar", "bska", "ska"]))
+    print(count_construct("printableprintoble", ["able", "ab", "le", "pr", "print", "rint", "ab", "printo", "printable", "print"]))
+    print(count_construct("printableprintoble", ["able", "ab", "le", "pr", "print", "rint", "ab", "printo", "printble", "print", "b"]))
+    print(count_construct("eeeeeeeeeeeeeeeeeeeeeeee", ["eeeeeeeeeeeeeeeeee", "eee", "e", "eeeeeeeeeeeeeeeeeeeee", "eeeeee", "e"]))
+    print(count_construct("eeeeeeeeeeeeeee", ["EE", "E", "E", "EE", "E", "E", "EE", "E", "E", "EE", "E", "E"]))

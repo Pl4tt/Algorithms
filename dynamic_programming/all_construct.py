@@ -25,9 +25,9 @@ def all_construct(target: str, words: list, memo: dict=None) -> list:
 
 
 if __name__ == "__main__":
-    print(all_construct("abcdef", ["ab", "abc", "cd", "def", "abcde"])) # True
-    print(all_construct("xyz", ["ab", "cd", "ef", "x", "z", "y"])) # True
-    print(all_construct("skateboard", ["sk", "bo", "rd", "skat", "skateboar", "sk", "boar", "bska", "ska"])) # False
-    print(all_construct("printableprintoble", ["able", "ab", "le", "pr", "print", "rint", "ab", "printo", "printable", "print"])) # False
-    print(all_construct("printableprintoble", ["able", "ab", "le", "pr", "print", "rint", "ab", "printo", "printble", "print", "b"])) # True
+    print(all_construct("abcdef", ["ab", "abc", "cd", "def", "abcde"]))
+    print(all_construct("xyz", ["ab", "cd", "ef", "x", "z", "y"]))
+    print(all_construct("skateboard", ["sk", "bo", "rd", "skat", "skateboar", "sk", "boar", "bska", "ska"]))
+    print(all_construct("printableprintoble", ["able", "ab", "le", "pr", "print", "rint", "ab", "printo", "printable", "print"]))
+    print(all_construct("printableprintoble", ["able", "ab", "le", "pr", "print", "rint", "ab", "printo", "printble", "print", "b"]))
 

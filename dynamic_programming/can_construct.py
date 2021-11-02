@@ -21,10 +21,10 @@ def can_construct(target: str, words: list, memo: dict=None) -> bool:
 
 
 if __name__ == "__main__":
-    print(can_construct("abcdef", ["ab", "abc", "cd", "def", "abcde"])) # True
-    print(can_construct("xyz", ["ab", "cd", "ef", "x", "z", "y"])) # True
-    print(can_construct("skateboard", ["sk", "bo", "rd", "skat", "skateboar", "sk", "boar", "bska", "ska"])) # False
-    print(can_construct("printableprintoble", ["able", "ab", "le", "pr", "print", "rint", "ab", "printo", "printable", "print"])) # False
-    print(can_construct("printableprintoble", ["able", "ab", "le", "pr", "print", "rint", "ab", "printo", "printble", "print", "b"])) # True
-    print(can_construct("eeeeeeeeeeeeeeeeeeeeeeee", ["eeeeeeeeeeeeeeeeee", "eee", "e", "eeeeeeeeeeeeeeeeeeeee", "eeeeee", "e"])) # True
-    print(can_construct("eeeeeeeeeeeeeee", ["EE", "E", "E", "EE", "E", "E", "EE", "E", "E", "EE", "E", "E"])) # False
+    print(can_construct("abcdef", ["ab", "abc", "cd", "def", "abcde"]))
+    print(can_construct("xyz", ["ab", "cd", "ef", "x", "z", "y"]))
+    print(can_construct("skateboard", ["sk", "bo", "rd", "skat", "skateboar", "sk", "boar", "bska", "ska"]))
+    print(can_construct("printableprintoble", ["able", "ab", "le", "pr", "print", "rint", "ab", "printo", "printable", "print"]))
+    print(can_construct("printableprintoble", ["able", "ab", "le", "pr", "print", "rint", "ab", "printo", "printble", "print", "b"]))
+    print(can_construct("eeeeeeeeeeeeeeeeeeeeeeee", ["eeeeeeeeeeeeeeeeee", "eee", "e", "eeeeeeeeeeeeeeeeeeeee", "eeeeee", "e"]))
+    print(can_construct("eeeeeeeeeeeeeee", ["EE", "E", "E", "EE", "E", "E", "EE", "E", "E", "EE", "E", "E"]))
