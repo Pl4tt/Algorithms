@@ -16,11 +16,11 @@ void bubbleSort(int arr[], int size) {
 
 int main()
 {
-    printArray(arr, length);
-    bubbleSort(arr, length);
+    printArray(arr, LENGTH);
+    bubbleSort(arr, LENGTH);
 
-    printArray(arr, length);
-    printf("%s", equalArrays(arr, sol, length) ? "true" : "false");
+    printArray(arr, LENGTH);
+    printf("%s", equalArrays(arr, sol, LENGTH) ? "true" : "false");
 
     return 0;
 }

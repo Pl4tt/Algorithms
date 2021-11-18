@@ -31,11 +31,11 @@ void quicksort(int arr[], int low, int high) {
 
 int main()
 {
-    printArray(arr, length);
-    quicksort(arr, 0, length-1);
+    printArray(arr, LENGTH);
+    quicksort(arr, 0, LENGTH-1);
 
-    printArray(arr, length);
-    printf("%s", equalArrays(arr, sol, length) ? "true" : "false");
+    printArray(arr, LENGTH);
+    printf("%s", equalArrays(arr, sol, LENGTH) ? "true" : "false");
 
     return 0;
 }
