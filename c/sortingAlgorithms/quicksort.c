@@ -4,20 +4,20 @@ void swap(int *x, int *y) {
     *y = temp;
 }
 
-int partition(int array[], int low, int high) {
-    int pivot = array[high];
-    int i = (low - 1);
+int partition(int arr[], int low, int high) {
+    int pivot = arr[high];
+    int l = (low - 1);
 
     for (int pos = low; pos < high; pos++) {
-        if (array[pos] <= pivot) {
-            i++;
-            swap(&array[i], &array[pos]);
+        if (arr[pos] <= pivot) {
+            l++;
+            swap(&arr[l], &arr[pos]);
         }
     }
 
-    swap(&array[i + 1], &array[high]);
+    swap(&arr[l+1], &arr[high]);
     
-    return (i + 1);
+    return (l + 1);
 }
 
 void quicksort(int arr[], int low, int high) {
