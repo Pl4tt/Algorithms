@@ -1,8 +1,5 @@
-void swap(int *x, int *y) {
-    int temp = *x;
-    *x = *y;
-    *y = temp;
-}
+#include "utils.c"
+
 
 int partition(int arr[], int low, int high) {
     int pivot = arr[high];
@@ -31,3 +28,14 @@ void quicksort(int arr[], int low, int high) {
 
 
 
+
+int main()
+{
+    printArray(arr, length);
+    quicksort(arr, 0, length-1);
+
+    printArray(arr, length);
+    printf("%s", equalArrays(arr, sol, length) ? "true" : "false");
+
+    return 0;
+}

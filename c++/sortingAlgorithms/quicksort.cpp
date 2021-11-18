@@ -1,8 +1,5 @@
-void swap(int *x, int *y) {
-    int temp = *x;
-    *x = *y;
-    *y = temp;
-}
+#include "utils.cpp"
+
 
 int partition(int arr[], int low, int high) {
     int pivot = arr[high];
@@ -27,4 +24,19 @@ void quicksort(int arr[], int low, int high) {
         quicksort(arr, pivot+1, high);
         quicksort(arr, low, high-1);
     }
+}
+
+
+
+
+int main()
+{
+    printArray(arr, length);
+    
+    quicksort(arr, 0, length-1);
+    printArray(arr, length);
+
+    cout << (equalArrays(arr, sol, length) ? "true" : "false");
+
+    return 0;
 }
