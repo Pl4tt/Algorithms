@@ -31,12 +31,12 @@ void quicksort(int arr[], int low, int high) {
 
 int main()
 {
-    print_array(arr, length);
+    print_array(arr, LENGTH);
 
-    quicksort(arr, 0, length-1);
-    print_array(arr, length);
+    quicksort(arr, 0, LENGTH-1);
+    print_array(arr, LENGTH);
 
-    cout << (equal_arrays(arr, sol, length) ? "true" : "false");
+    cout << (equal_arrays(arr, sol, LENGTH) ? "true" : "false");
 
     return 0;
 }
