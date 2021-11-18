@@ -8,14 +8,14 @@ void swap(int *x, int *y) {
     *y = temp;
 }
 
-void printArray(int arr[], int size) {
+void print_array(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }
     cout << "end" << endl;
 }
 
-bool equalArrays(int arr[], int arr2[], int size) {
+bool equal_arrays(int arr[], int arr2[], int size) {
     for (int i = 0; i < size; i++) {
         if (arr[i] != arr2[i]) return false;
     }
