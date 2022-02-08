@@ -17,7 +17,7 @@ def generate_key_pair():
     # (e*d)%phi = 1
 
     public_key = (n, e)
-    private_key = (p, q, d)
+    private_key = (n, d)
 
     return public_key, private_key
 
@@ -33,8 +33,8 @@ def encrypt(key, raw_text):
     return encrypted_text
 
 def decrypt(key, enc_text):
-    n = key[0]*key[1]
-    d = key[2]
+    n = key[0]
+    d = key[1]
     decrypted_text = ""
 
     for char in enc_text:
