@@ -22,8 +22,7 @@ def generate_key_pair():
     return public_key, private_key
 
 def encrypt(key, raw_text):
-    n = key[0]
-    e = key[1]
+    n, e = key
     encrypted_text = ""
 
     for char in raw_text:
@@ -33,8 +32,7 @@ def encrypt(key, raw_text):
     return encrypted_text
 
 def decrypt(key, enc_text):
-    n = key[0]
-    d = key[1]
+    n, d = key
     decrypted_text = ""
 
     for char in enc_text:
